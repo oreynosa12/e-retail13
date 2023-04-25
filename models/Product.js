@@ -39,14 +39,14 @@ Product.init(
       }
    },
       // ASK***
-    // category_id: {
-    //   type: DataTypes.INTEGER,
-    //   references: {
-    //     // This references the `Category` model, which we set in `Category.js` as its `modelName` property
-    //     model: 'Category',
-    //     key: 'id',
-    //   },     
-    // },
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        // This references the `Category` model, which we set in `Category.js` as its `modelName` property
+        model: 'category',
+        key: 'id',
+      },     
+    },
   },
   {
     sequelize,
