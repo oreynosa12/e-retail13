@@ -17,14 +17,17 @@ ProductTag.init(
       type: DataTypes.STRING,
       allowNull: false,
       references: {
-        model: 'ProductTag',
+        model: 'product',
         key: 'id',
        },     
-        
-       references:{
-        model: 'Tag',
+       
+       tag_id: {
+        type: DataTypes.INTEGER,
+        references:{
+        model: 'tag',
         key: 'id',
        }
+      }
     },
   },
   {
